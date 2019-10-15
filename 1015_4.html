@@ -10,11 +10,47 @@
       }
 
       .box {
+        /*
         border-width: thick;
         border-style: dashed;
         border-color: black;
-        border-radius: 20px;
+        */
+        border: thick dashed black;
+        /*위의 주석 부분과 동일한 역할*/
+        border-radius: 50px 40px 20px 10px;
+        /*모서리 부분을 각각 다르게 할 수 있다.*/
         /*50px 40px 20px 10px;*/
+      }
+
+      .font_big {
+        font-size: 20px;
+      }
+
+      .font_italic {
+        font-style: italic;
+      }
+
+      .font_bold {
+        font-weight: bold;
+      }
+
+      .font_center {
+        text-align: center;
+      }
+
+      .button {
+        width: 150px;
+        height: 70px;
+        background-color: #FF6A00;
+        border: 10px solid #FFFFFF;
+        border-radius: 30px;
+        box-shadow: 5px 5px 5px #A9A9A9;
+      }
+
+      .button>a {
+        display: block;
+        line-height: 70px;
+        text-decoration: none;
       }
 
     </style>
@@ -25,6 +61,12 @@
     <hr />
     <div class="box">
       <h1>Lorem ipsum dolor amt</h1>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <div class="button">
+      <a href="#" class="font_big font_italic font_bold font_center">Click</a>
     </div>
   </body>
 
